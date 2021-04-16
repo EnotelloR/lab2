@@ -1,0 +1,17 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab2"
+        xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="Lab2.MainWindow"
+        mc:Ignorable="d"
+        Title="Угрозы безопасности" ResizeMode="CanResizeWithGrip" WindowState="Maximized">
+    <Grid>
+        <DataGrid x:Name="mainGrid" HorizontalAlignment="Center" VerticalAlignment="Center" Loaded="mainGrid_Loaded" IsReadOnly="True" Grid.Column="1" Margin="0,0,300,100" MouseDoubleClick="mainGrid_MouseDoubleClick" Height="12" MinHeight="315" MinWidth="300"/>
+        <Button x:Name="updateButton" Content="Обновить данные" Grid.Column="1" VerticalAlignment="Center" Margin="0,0,75,100" HorizontalAlignment="Right" FontSize="24" FontWeight="Bold" FontStyle="Italic" Click="updateButton_Click"/>
+        <Button x:Name="rightButton" Content="Дальше" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="24" Margin="291,0,380,48" Click="rightButton_Click"/>
+        <Button x:Name="leftButton" Content="Назад" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="24" Margin="80,0,611,48" Click="leftButton_Click"/>
+        <Label x:Name="pageShower" Content="" HorizontalAlignment="Center" Margin="214,0,536,42" VerticalAlignment="Bottom" FontSize="24"/>
+    </Grid>
+</Window>
