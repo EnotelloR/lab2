@@ -122,7 +122,7 @@ namespace Lab2
                 StringBuilder message = new StringBuilder();
                 message.Append("Идентификатор угрозы: " + selectedItem.ID + ".\n\n");
                 message.Append("Наименование угрозы: " + selectedItem.Name + ".\n\n");
-                message.Append("Описание угрозы: " + selectedItem.Name + ".\n\n");
+                message.Append("Описание угрозы: " + selectedItem.Description + ".\n\n");
                 message.Append("Источник угрозы: " + selectedItem.Origin + ".\n\n");
                 message.Append("Нарушение конфиденциальности: " + selectedItem.ConfidenceThreat + ".\n\n");
                 message.Append("Нарушение целостности: " + selectedItem.IntegrityThreat + ".\n\n");
